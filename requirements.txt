@@ -1,19 +1,22 @@
 fastapi==0.110.0
 uvicorn==0.30.1
+
+# --- PyTorch & vision: verified compatible, prebuilt for Python 3.13 + CUDA 12.1 ---
 torch==2.5.1
-torchvision==0.20.0
+torchvision==0.22.0
+
+# --- Core scientific / image ---
 numpy==1.26.4
 pillow==10.4.0
+
+# --- Diffusion + Transformers stack ---
 diffusers==0.27.2
 transformers==4.37.2
+tokenizers==0.15.2
 safetensors==0.4.2
 accelerate==0.29.3
-python-multipart==0.0.9
 pyyaml==6.0.1
+python-multipart==0.0.9
 
-# ✅ Skip xformers (Render can't compile it)
-# ✅ Use prebuilt wheels only — no Rust build
-tokenizers==0.15.2
-
-# ✅ Force PyTorch wheels index (CUDA 12.1)
+# --- CUDA wheel index for Render (no compile, prebuilt only) ---
 --extra-index-url https://download.pytorch.org/whl/cu121

@@ -1,6 +1,6 @@
 fastapi==0.110.0
 uvicorn==0.30.1
-torch==2.5.1
+torch==2.9.0
 torchvision==0.24.0
 numpy==1.26.4
 pillow==10.4.0
@@ -10,6 +10,6 @@ safetensors==0.4.2
 accelerate==0.29.3
 python-multipart==0.0.9
 
-# install xformers separately AFTER torch to avoid build error
+# install xformers from PyTorch index to ensure CUDA compatibility
 --extra-index-url https://download.pytorch.org/whl/cu121
 xformers

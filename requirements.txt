@@ -8,5 +8,8 @@ diffusers==0.27.2
 transformers==4.40.0
 safetensors==0.4.2
 accelerate==0.29.3
-xformers==0.0.28
 python-multipart==0.0.9
+
+# install xformers separately AFTER torch to avoid build error
+--extra-index-url https://download.pytorch.org/whl/cu121
+xformers

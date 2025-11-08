@@ -5,10 +5,10 @@ torchvision==0.24.0
 numpy==1.26.4
 pillow==10.4.0
 diffusers==0.27.2
-transformers==4.40.0
+transformers==4.38.2
 safetensors==0.4.2
 accelerate==0.29.3
-xformers==0.0.26
 python-multipart==0.0.9
-
-
+pyyaml==6.0.1
+xformers==0.0.32.post2
+tokenizers==0.15.2

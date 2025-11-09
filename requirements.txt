@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi==0.110.0
 uvicorn==0.30.1
 torch==2.4.0
@@ -10,3 +11,17 @@ safetensors==0.4.2
 accelerate==0.29.3
 xformers==0.0.26
 python-multipart==0.0.9
+=======
+fastapi
+uvicorn
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+diffusers==0.27.2
+transformers==4.37.2
+accelerate==0.28.0
+safetensors==0.4.2
+python-multipart
+pyyaml
+tokenizers
+>>>>>>> 736f5d9da17966788e650f536c90e440674c3b3f
